@@ -163,8 +163,11 @@
 <div class="custom-text" style="font-size: 20px;">
 	<p style="text-align: justify;">
 	Hadi Amirpour is a Tenure-Track Assistant Professor at the Institute of Information Technology at the University of Klagenfurt, Austria.  He received his Ph.D. in Computer Science, holds a Master's degree in Electrical Engineering, and has two Bachelor's degrees in Electrical Engineering and Biomedical Engineering.  
+	
 	He was previously a Postdoctoral Researcher with the <a href="https://athena.itec.aau.at/" target="_blank">ATHENA project</a>, funded by the Christian Doppler Laboratory in collaboration with its industry partner Bitmovin. He was also involved in <a href="https://emergimg.di.ubi.pt" target="_blank">EmergIMG</a>, a Portuguese consortium focused on emerging imaging technologies, funded by the Portuguese funding agency and the EU Horizon 2020 program.
+	
 	His research interests include video streaming, image and video compression, quality of experience, emerging 3D imaging technologies, and medical image analysis. He has contributed to standardization committees such as JPEG Pleno and MPEG and has been co-chairing Qualinet TF7 since 2021. Additionally, he serves as an Associate Editor of IEEE TCSVT. He has received the Best Paper Awards from PCS 2024 and NAB 2025. 
+	
 	He has also played an active role in organizing conferences, special sessions, workshops, and tutorials at leading international events, including IEEE ICME 2025, IEEE QoMEX 2025, ACM MM 2025, VQEG 2024, IEEE ICME 2023, ACM MM 2022, IEEE EUVIP 2022, and ACM MobiSys 2022.
 	
 	</p>
@@ -178,39 +181,184 @@
 			</div>
 		</div>
 		<!-- /ABOUT -->
+
+
+
+  
+
+
+  
+
+
+
 		
 		<!-- SERVICE -->
-		<div class="erling_tm_section clearfix" id="news">
-			<div class="erling_tm_service">
-				<div class="container">
-					<div class="erling_tm_title wow fadeInLeft" data-wow-duration="1s">
-						<span>The recent news</span>
-						<h3>News</h3>
-					</div>
-					<div class="service_list">
-						
-							<div class="grid3-content" style="width: 90%; margin: auto; text-align: left; position: relative; z-index: 0;">
-    <div class="grid3-content" style="border: 1px solid #ccc; padding: 15px; border-radius: 5px; background-color: #f9f9f9; max-height: 200px; overflow-y: auto; position: relative;">
-        <ul class="grid3-ul" style="list-style-type: disc; padding-left: 20px; margin: 0;">
-            <li><b>[02/2025]</b> Served as Organization Committee of <a href="https://vcip2025.itec.aau.at/" target="_blank">VCIP 2025</a>.</li>
-            <li><b>[01/2025]</b> DeepStream: Video Streaming Enhancements using Compressed Deep Neural Networks got accepted at IEEE TCSVT.</li>
-            <li><b>[01/2025]</b> One paper is selected as ESI Hot Paper.</li>
-            <li><b>[01/2025]</b> Attended DUT-Cardiff Intelligent Vision Frontier Forum as main participant and co-organizer.</li>
-            <li><b>[01/2025]</b> Our Special Session is accepted by ICIP 2025. Please submit to it!</li>
-            <li><b>[01/2025]</b> Invited as an Area Chair of ICME 2025.</li>
-            <li><b>[01/2025]</b> Invited as a Nominator of VinFuture Prize.</li>
-            <li><b>[01/2025]</b> One paper is selected as ESI Hot Paper.</li>
-            <li><b>[01/2025]</b> Attended DUT-Cardiff Intelligent Vision Frontier Forum as main participant and co-organizer.</li>
-            <li><b>[01/2025]</b> Our Special Session is accepted by ICIP 2025. Please submit to it!</li>
-            <li><b>[01/2025]</b> Invited as an Area Chair of ICME 2025.</li>
-        </ul>
-    </div>
-</div>
-					</div>
+
+		<!DOCTYPE html>
+		<html lang="en">
+		<head>
+		  <meta charset="UTF-8">
+		  <meta name="viewport" content="width=device-width, initial-scale=1">
+		  <title>Vertical Scroll News Section – Two Column Layout</title>
+		  <style>
+			/* Global Base Styles */
+			body {
+			  font-family: 'Helvetica Neue', Arial, sans-serif;
+			  margin: 0;
+			  padding: 0;
+			  background: #f4f4f4; /* Global background color */
+			  color: #334;
+			}
+			.container {
+			  max-width: 1140px;
+			  margin: 0 auto;
+			  padding: 0 15px;
+			}
+			/* News Section Styling */
+			.news-section {
+			  padding: 60px 20px;
+			  background: #f4f4f4;  /* Changed from white (#fff) to #f4f4f4 to match other sections */
+			  margin: 20px auto;
+			  border: 1px solid #ddd;
+			  border-radius: 8px;
+			}
+			.section-header {
+			  text-align: center;
+			  margin-bottom: 30px;
+			}
+			.section-subtitle {
+			  display: block;
+			  font-size: 1.2rem;
+			  color: #777;
+			  margin-bottom: 10px;
+			}
+			.section-title {
+			  font-size: 2.5rem;
+			  color: #222;
+			  margin: 0;
+			}
+			/* Vertical Scrollable News List */
+			.news-vertical-list {
+			  max-height: 300px; /* Adjust height as needed */
+			  overflow-y: auto;
+			  padding-right: 10px; /* Allow space for custom scrollbar */
+			  display: flex;
+			  flex-direction: column;
+			  gap: 15px;
+			}
+			/* Custom Scrollbar Styling for Webkit Browsers */
+			.news-vertical-list::-webkit-scrollbar {
+			  width: 8px;
+			}
+			.news-vertical-list::-webkit-scrollbar-track {
+			  background: #f1f1f1;
+			  border-radius: 4px;
+			}
+			.news-vertical-list::-webkit-scrollbar-thumb {
+			  background: #848788;
+			  border-radius: 4px;
+			}
+			/* Individual News Item – Two Column Layout */
+			.news-item {
+			  display: flex;
+			  align-items: flex-start;
+			  background: #fafafa;
+			  border: 1px solid #ddd;
+			  border-radius: 8px;
+			  padding: 15px;
+			  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+			  transition: transform 0.3s, box-shadow 0.3s;
+			}
+			.news-item:hover {
+			  transform: translateY(-3px);
+			  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+			}
+			/* Date Column */
+			.news-date {
+			  flex: 0 0 120px; /* fixed width; adjust as needed */
+			  font-weight: bold;
+			  color: #41474b;
+			  margin-right: 15px;
+			}
+			/* Content Column */
+			.news-content {
+			  flex: 1;
+			  font-size: 1rem;
+			  line-height: 1.6;
+			}
+			.news-content a {
+			  color: #007acc;
+			  text-decoration: none;
+			  border-bottom: 1px solid transparent;
+			  transition: border-color 0.3s;
+			}
+			.news-content a:hover,
+			.news-content a:focus {
+			  border-bottom: 1px solid #007acc;
+			}
+		  </style>
+		</head>
+		<body>
+		  <!-- NEWS SECTION: Vertical Scroll with Two Column Layout -->
+		  <section id="news" class="news-section">
+			<div class="container">
+			  <header class="section-header">
+				<span class="section-subtitle">The recent news</span>
+				<h3 class="section-title">News</h3>
+			  </header>
+			  <div class="news-vertical-list">
+				<div class="news-item">
+				  <div class="news-date">[02/2025]</div>
+				  <div class="news-content">
+					Served as Organization Committee of <a href="https://vcip2025.itec.aau.at/" target="_blank">VCIP 2025</a>.
+				  </div>
 				</div>
+				<div class="news-item">
+				  <div class="news-date">[01/2025]</div>
+				  <div class="news-content">
+					DeepStream got accepted at IEEE TCSVT.
+				  </div>
+				</div>
+				<div class="news-item">
+				  <div class="news-date">[01/2025]</div>
+				  <div class="news-content">
+					One paper is selected as ESI Hot Paper.
+				  </div>
+				</div>
+				<div class="news-item">
+				  <div class="news-date">[01/2025]</div>
+				  <div class="news-content">
+					Attended DUT-Cardiff Intelligent Vision Frontier Forum as main participant and co-organizer.
+				  </div>
+				</div>
+				<div class="news-item">
+				  <div class="news-date">[01/2025]</div>
+				  <div class="news-content">
+					Our Special Session is accepted by ICIP 2025. Please submit to it!
+				  </div>
+				</div>
+				<div class="news-item">
+				  <div class="news-date">[01/2025]</div>
+				  <div class="news-content">
+					Invited as an Area Chair of ICME 2025.
+				  </div>
+				</div>
+				<div class="news-item">
+				  <div class="news-date">[01/2025]</div>
+				  <div class="news-content">
+					Invited as a Nominator of VinFuture Prize.
+				  </div>
+				</div>
+			  </div>
 			</div>
-		</div>
-		<!-- /SERVICE -->
+		  </section>
+		</body>
+		</html>
+		
+
+  
+
+
 		
 		<!-- PORTFOLIO -->
 		<div class="erling_tm_section clearfix" id="talks">
