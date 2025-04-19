@@ -573,15 +573,16 @@
 			  </div>
 			</div>
 		  </section>
-		  
-		  
-		  
-		  
-				  
-				  
-		<!-- /Teaching-->
+		  		  
+<!-- /Teaching-->
 
-		  <!-- AWARDS SECTION -->
+
+
+
+
+
+
+<!-- AWARDS SECTION -->
 <div class="erling_tm_section clearfix" id="award">
 	<div class="erling_tm_portfolio swiper-section">
 	  <div class="container">
@@ -658,7 +659,7 @@
   
 		  <div class="award-item">
 			<div class="award-icon">🎖️</div>
-			<div class="award-title">Best New Streaming Innovation Award</div>
+			<div class="award-title">Best Streaming Innovation Award</div>
 			<div class="award-meta">Fast Multi-Resolution and Multi-Rate Encoding for HTTP Adaptive Streaming Using Machine Learning.</div>
 		  </div>
 
@@ -682,14 +683,257 @@
   <!-- /AWARDS SECTION -->
   
 		
-		<!-- PORTFOLIO -->
-		<div class="erling_tm_section clearfix" id="talks">
-			<div class="erling_tm_portfolio swiper-section">
-				<div class="container">
-					<div class="erling_tm_title wow fadeInLeft" data-wow-duration="1s">
-						<span>Recent & Upcoming Talks</span>
-						<h3>Talks</h3>
-					</div>
+
+
+
+ <!-- PATENTS SECTION -->
+<div class="erling_tm_section clearfix" id="patents">
+	<div class="erling_tm_portfolio swiper-section">
+	  <div class="container">
+		<div class="erling_tm_title wow fadeInLeft" data-wow-duration="1s">
+		  <span>Innovation Vault</span>
+		  <h3>Granted Patents</h3>
+		</div>
+  
+		<style>
+		  .patents-grid {
+			display: grid;
+			grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+			gap: 30px;
+			margin-top: 30px;
+		  }
+  
+		  .patent-card {
+			background: linear-gradient(to right, #f9f9f9, #ffffff);
+			border-left: 6px solid #5f5f61;
+			border-radius: 12px;
+			padding: 25px;
+			box-shadow: 0 3px 15px rgba(0, 0, 0, 0.06);
+			position: relative;
+			transition: all 0.3s ease;
+			cursor: pointer;
+		  }
+  
+		  .patent-card:hover {
+			transform: translateY(-5px);
+			box-shadow: 0 6px 25px rgba(98, 98, 103, 0.25);
+		  }
+  
+		  .patent-badge {
+			position: absolute;
+			top: -15px;
+			right: -15px;
+			background: #59595b;
+			color: white;
+			padding: 8px 14px;
+			font-size: 12px;
+			border-radius: 20px;
+			box-shadow: 0 0 10px rgba(96, 96, 99, 0.4);
+			font-weight: 600;
+			font-family: 'Montserrat', sans-serif;
+		  }
+  
+		  .patent-title {
+			font-size: 18px;
+			font-weight: 600;
+			color: #2c3e50;
+			margin-bottom: 8px;
+		  }
+  
+		  .patent-meta {
+			font-size: 15px;
+			color: #555;
+			margin-bottom: 6px;
+		  }
+  
+		  .patent-id {
+			font-size: 13px;
+			color: #888;
+			font-style: italic;
+		  }
+  
+		  .patent-modal {
+			display: none;
+			position: fixed;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+			background: rgba(40, 40, 40, 0.85);
+			z-index: 9999;
+			align-items: center;
+			justify-content: center;
+		  }
+  
+		  .patent-modal-content {
+			background: #fff;
+			padding: 30px;
+			border-radius: 10px;
+			max-width: 600px;
+			width: 90%;
+			color: #333;
+			box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2);
+			font-family: 'Segoe UI', sans-serif;
+		  }
+  
+		  .patent-modal-title {
+			font-size: 20px;
+			font-weight: bold;
+			color: #2c3e50;
+			margin-bottom: 10px;
+		  }
+  
+		  .patent-modal-meta,
+		  .patent-modal-id {
+			font-size: 14px;
+			margin-bottom: 8px;
+			color: #666;
+		  }
+  
+		  .patent-modal-abstract {
+			font-size: 14px;
+			line-height: 1.6;
+			color: #333;
+		  }
+		</style>
+  
+		<div class="patents-grid">
+		  <div class="patent-card" onclick="openPatentModal(
+			'Perceptually-aware online per-title encoding for live video streaming',
+			'US Patent No. 12166997 – Dec 10, 2024',
+			'Inventors: Vignesh V Menon, Hadi Amirpour, Christian Timmerer',
+			'Techniques for implementing perceptually aware per-title encoding may include receiving an input video, a set of resolutions, a maximum target bitrate and a minimum target bitrate, extracting content aware features for each segment of the input video, predicting a perceptually aware bitrate-resolution pair for each segment using a model configured to optimize for a quality metric using constants trained for each of the set of resolutions, generating a target encoding set including a set of perceptually aware bitrate-resolution pairs, and encoding the target encoding set. The content aware features may include a spatial energy feature and an average temporal energy. According to these methods only a subset of bitrates and resolutions, less than a full set of bitrates and resolutions, are encoded to provide high quality video content for streaming.'
+		  )">
+			<div class="patent-badge">🧾 PATENT</div>
+			<div class="patent-title">Perceptually-aware Online Per-Title Encoding</div>
+			<div class="patent-meta">US12166997 – Dec 2024</div>
+			<div class="patent-id">Inventors: Vignesh V Menon, Hadi Amirpour, Christian Timmerer</div>
+		  </div>
+  
+		  <div class="patent-card" onclick="openPatentModal(
+			'Scalable Per-Title Encoding',
+			'US Patent Application No. 18734842 – Dec 5, 2024',
+			'Inventors: Hadi Amirpour, Christian Timmerer',
+			'A scalable per-title encoding technique may include detecting scene cuts in an input video received by an encoding network or system, generating segments of the input video, performing per-title encoding of a segment of the input video, training a deep neural network (DNN) for each representation of the segment, thereby generating a trained DNN, compressing the trained DNN, thereby generating a compressed trained DNN, and generating an enhanced bitrate ladder including metadata comprising the compressed trained DNN. In some embodiments, the method also may include generating a base layer bitrate ladder for CPU devices, and providing the enhanced bitrate ladder for GPU-available devices.'
+		  )">
+			<div class="patent-badge">🧾 PATENT</div>
+			<div class="patent-title">Scalable Per-Title Encoding</div>
+			<div class="patent-meta">US Application No. 18734842 – Dec 2024</div>
+			<div class="patent-id">Inventors: Hadi Amirpour, Christian Timmerer</div>
+		  </div>
+
+		  
+			<div class="patent-card" onclick="openPatentModal(
+			  'Per-title encoding using spatial and temporal resolution downscaling',
+			  'US Patent No. 12003763 – Jun 4, 2024',
+			  'Inventors: Hadi Amirpour, Christian Timmerer',
+			  'Techniques relating to per-title encoding using spatial and temporal resolution downscaling is disclosed. A method for per-title encoding includes receiving a video input comprised of video segments, spatially downscaling the video input, temporally downscaling the video input, encoding the video input to generate an encoded video, then temporally and spatially upscaling the encoded video. Spatially downscaling may include reducing a resolution of the video input, and temporally downscaling may include reducing a framerate of the video input. Objective metrics for the upscaled encoded video show improved quality over conventional methods.'
+			)">
+			  <div class="patent-badge">🧾 PATENT</div>
+			  <div class="patent-title">Per-title Encoding Using Resolution Downscaling</div>
+			  <div class="patent-meta">US12003763 – Jun 2024</div>
+			  <div class="patent-id">Inventors: Hadi Amirpour, Christian Timmerer</div>
+			</div>
+			<div class="patent-card" onclick="openPatentModal(
+			'Fast multi-rate encoding for adaptive streaming using machine learning',
+			'US Patent No. 11936864 – Mar 19, 2024',
+			'Inventors: Hadi Amirpour, Ekrem Çetinkaya, Christian Timmerer',
+			'According to embodiments of the disclosure, fast multi-rate encoding may be performed using machine learning by encoding a lowest quality representation to determine encoding parameters, processing raw data of the video using a neural network to obtain an intermediate output comprising encoding features, augmenting the intermediate output with additional encoding features to form a final tensor, and processing the final tensor with another neural network to obtain a classification output comprising a split or not split decision for an image data block. The classification output may be used to encode a highest quality representation, and then other representations of the video.'
+			)">
+			<div class="patent-badge">🧾 PATENT</div>
+			<div class="patent-title">Fast Multi-Rate Encoding Using ML</div>
+			<div class="patent-meta">US11936864 – Mar 2024</div>
+			<div class="patent-id">Inventors: Hadi Amirpour, Ekrem Çetinkaya, Christian Timmerer</div>
+			</div>
+			<div class="patent-card" onclick="openPatentModal(
+          'Variable framerate encoding using content-aware framerate prediction for high framerate videos',
+          'US Patent No. 11924437 – Mar 5, 2024',
+          'Inventors: Vignesh V Menon, Hadi Amirpour, Christian Timmerer',
+          'The technology described herein relates to variable framerate encoding. A method for variable framerate encoding includes receiving shots, as segmented from a video input, extracting features for each of the shots, the features including at least a spatial energy feature and an average temporal energy, predicting a frame dropping factor for each of the shots based on the spatial energy feature and the average temporal energy, predicting an optimized framerate for each of the shots based on the frame dropping factor, downscaling and encoding each of the shots using the optimized framerate. The encoded shots may then be decoded and upscaled back to their original framerates.'
+        )">
+          <div class="patent-badge">🧾 PATENT</div>
+          <div class="patent-title">Variable Framerate Encoding</div>
+          <div class="patent-meta">US11924437 – Mar 2024</div>
+          <div class="patent-id">Inventors: Vignesh V Menon, Hadi Amirpour, Christian Timmerer</div>
+        </div>
+
+		<div class="patent-card" onclick="openPatentModal(
+          'Low-latency online per-title encoding',
+          'US Patent No. 11902580 – Feb 13, 2024',
+          'Inventors: Vignesh V Menon, Hadi Amirpour, Christian Timmerer',
+          'The technology described herein relates to online per-title encoding. A method for online per-title encoding includes receiving a video input, generating segments of the video input, extracting a spatial feature and a temporal feature, predicting bitrate-resolution pairs based on the spatial feature and the temporal feature, using a discrete cosine transform (DCT)-based energy function, and per-title encoding segments of the video input for the predicted bitrate-resolution pairs. A system for online per-title encoding may include memory for storing a set of bitrates, a set of resolutions, and a machine learning module configured to predict bitrate resolution pairs based on low-complexity spatial and temporal features.'
+        )">
+          <div class="patent-badge">🧾 PATENT</div>
+          <div class="patent-title">Low-Latency Online Per-Title Encoding</div>
+          <div class="patent-meta">US11902580 – Feb 2024</div>
+          <div class="patent-id">Inventors: Vignesh V Menon, Hadi Amirpour, Christian Timmerer</div>
+        </div>
+		<div class="patent-card" onclick="openPatentModal(
+          'Fast multi-rate encoding for adaptive HTTP streaming',
+          'US Patent No. 11546401 – Jan 3, 2023',
+          'Inventors: Hadi Amirpour, Ekrem Çetinkaya, Christian Timmerer',
+          'According to embodiments of the disclosure, information of higher and lower quality encoded video segments is used to limit Rate-Distortion Optimization (RDO) for each Coding Unit Tree (CTU). A method first encodes the highest bit-rate segment and consequently uses it to encode the lowest bit-rate video segment. Block structure and selected reference frame of both highest and lowest bit-rate video segments are used to predict and shorten RDO process for each CTU in middle bit-rates. The method delays just one frame using parallel processing. This approach provides time complexity reduction compared to the reference software for middle bit-rates while degradation is negligible.'
+        )">
+          <div class="patent-badge">🧾 PATENT</div>
+          <div class="patent-title">Fast Multi-Rate Encoding for HTTP</div>
+          <div class="patent-meta">US11546401 – Jan 2023</div>
+          <div class="patent-id">Inventors: Hadi Amirpour, Ekrem Çetinkaya, Christian Timmerer</div>
+        </div>
+
+		</div>
+	  </div>
+	</div>
+  </div>
+  
+  <!-- Modal HTML -->
+  <div class="patent-modal" id="patentOverlay" onclick="closePatentModal(event)">
+	<div class="patent-modal-content" onclick="event.stopPropagation()">
+	  <div class="patent-modal-title" id="patentModalTitle"></div>
+	  <div class="patent-modal-meta" id="patentModalMeta"></div>
+	  <div class="patent-modal-id" id="patentModalId"></div>
+	  <div class="patent-modal-abstract" id="patentModalAbstract"></div>
+	</div>
+  </div>
+  
+  <script>
+	function openPatentModal(title, meta, id, abstract) {
+	  document.getElementById("patentModalTitle").innerText = title;
+	  document.getElementById("patentModalMeta").innerText = meta;
+	  document.getElementById("patentModalId").innerText = id;
+	  document.getElementById("patentModalAbstract").innerText = abstract;
+	  document.getElementById("patentOverlay").style.display = "flex";
+	  document.body.style.overflow = "hidden";
+	}
+  
+	function closePatentModal(event) {
+	  document.getElementById("patentOverlay").style.display = "none";
+	  document.body.style.overflow = "auto";
+	}
+  </script>
+  
+  
+
+
+
+
+
+  
+
+
+
+
+
+
+
+  
+<!-- PORTFOLIO -->
+<div class="erling_tm_section clearfix" id="talks">
+	<div class="erling_tm_portfolio swiper-section">
+		<div class="container">
+			<div class="erling_tm_title wow fadeInLeft" data-wow-duration="1s">
+				<span>Recent & Upcoming Talks</span>
+				<h3>Talks</h3>
+			</div>
 					
 
 
