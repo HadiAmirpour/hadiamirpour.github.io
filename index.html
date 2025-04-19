@@ -929,7 +929,7 @@
 
   
 <!-- PORTFOLIO -->
-<div class="erling_tm_section clearfix" id="talks">
+<!-- <div class="erling_tm_section clearfix" id="talks">
 	<div class="erling_tm_portfolio swiper-section">
 		<div class="container">
 			<div class="erling_tm_title wow fadeInLeft" data-wow-duration="1s">
@@ -942,7 +942,7 @@
 <div class="container">    
     <div class="talk-card">
         <div class="talk-info">
-            <div class="talk-title">fMRI signatures of deep anesthesia in primates and rodents</div>
+            <div class="talk-title">Live is Life: Per-Title Encoding for Live Video Workflows</div>
             <div class="talk-meta">Douglas Research Centre CIC Imaging Series Lecture</div>
             <div class="talk-meta">Nov 24, 2021 · 11:00 AM · Montreal, Canada</div>
             <div class="talk-meta">Nikoloz Sirmpilatze</div>
@@ -955,19 +955,147 @@
         <img src="https://www.nikosirmpilatze.com/talk/douglas/featured_hued2ac5fac3bb1d227f9d1f4a8f959c5b_213364_150x0_resize_lanczos_2.png" alt="Talk Thumbnail" class="talk-image">
     </div>
 </div>
+		</div>
+	</div>  
+
+</div> -->
+<!-- /PORTFOLIO -->
 
 
-				</div>
+
+
+
+
+  
+
+<!-- TALKS SECTION - PREMIUM STYLE -->
+<div class="erling_tm_section clearfix" id="talks">
+	<div class="erling_tm_portfolio swiper-section">
+	  <div class="container">
+		<div class="erling_tm_title wow fadeInLeft" data-wow-duration="1s">
+		  <span>Talks</span>
+		  <h3>Talks</h3>
+		</div>
+  
+		<style>
+		  .talks-deck {
+			display: grid;
+			grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+			gap: 30px;
+			margin-top: 35px;
+		  }
+  
+		  .talk-entry {
+			background: linear-gradient(to right, #ffffff, #f9f9f9);
+			border-radius: 16px;
+			padding: 28px;
+			border-left: 6px solid #5f5f61;
+			box-shadow: 0 4px 18px rgba(0, 0, 0, 0.05);
+			position: relative;
+			transition: all 0.3s ease;
+		  }
+  
+		  .talk-entry:hover {
+			transform: translateY(-5px);
+			box-shadow: 0 8px 30px rgba(0, 0, 0, 0.08);
+		  }
+  
+		  .talk-head {
+			font-size: 18px;
+			font-weight: 600;
+			color: #2c3e50;
+			margin-bottom: 8px;
+		  }
+  
+		  .talk-meta {
+			font-size: 14px;
+			color: #666;
+			margin-bottom: 4px;
+		  }
+  
+		  .talk-date {
+			font-size: 13px;
+			color: #888;
+			font-style: italic;
+		  }
+  
+		  .talk-icon {
+			position: absolute;
+			top: -16px;
+			right: -16px;
+			background: #59595b;
+			color: white;
+			font-size: 12px;
+			font-weight: 600;
+			padding: 8px 14px;
+			border-radius: 20px;
+			box-shadow: 0 0 12px rgba(96, 96, 99, 0.4);
+			font-family: 'Montserrat', sans-serif;
+		  }
+		</style>
+  
+		<div class="talks-deck">
+		  
+
+		  <div class="talk-entry" onclick="openTalkModal(
+			'Live is Life: Per-Title Encoding for Live Video Workflows',
+			'Demuxed 2022',
+			'October 13, 2022 – San Francisco, USA',
+			`While live video streaming is expected to continue growing at an accelerated pace, one potential area for optimization that has remained relatively untapped is the use of content-aware encoding to improve the quality of live contribution streams. For those who have tried, it has been quite challenging due to the additional latency that complexity analysis adds to the streaming framework. However, it merits further investigation, as optimizing live video coding workflows may result in (i) decreased storage or/and delivery costs and (ii) increased QoE.<br><br>
+			In this talk, we introduce a revolutionary video complexity metric that operates in real-time and enables the adoption of per-title encoding (among others) for live video workflows. We explain and illustrate the key components of this metric and highlight the open source repository including how video developers can utilize it. Finally, we present selected applications (i.e., per-title encoding among others) and showcase their performance compared to state-of-the-art techniques for live video workflows.<br><br>
+			<strong>Watch here:</strong> <a href='https://2022.demuxed.com/#speakers' target='_blank'>Demuxed 2022</a>`
+			)">
+			<div class="talk-icon">🎤 TALK</div>
+			<div class="talk-head">Live is Life: Per-Title Encoding for Live Video</div>
+			<div class="talk-meta">Demuxed 2022</div>
+			<div class="talk-date">Oct 13, 2022 – San Francisco, USA</div>
 			</div>
 
 
-
-			  
-
 		</div>
-		<!-- /PORTFOLIO -->
+	  </div>
+	</div>
+  </div>
+
+  <!-- TALK MODAL -->
+<div class="patent-modal" id="talkModal" onclick="closeTalkModal(event)">
+	<div class="patent-modal-content" onclick="event.stopPropagation()">
+	  <div class="patent-modal-title" id="talkModalTitle"></div>
+	  <div class="patent-modal-meta" id="talkModalEvent"></div>
+	  <div class="patent-modal-id" id="talkModalDate"></div>
+	  <div class="patent-modal-abstract" id="talkModalAbstract"></div>
+	</div>
+  </div>
+  
+  <script>
+	function openTalkModal(title, event, date, abstract) {
+	  document.getElementById("talkModalTitle").innerText = title;
+	  document.getElementById("talkModalEvent").innerText = event;
+	  document.getElementById("talkModalDate").innerText = date;
+	  document.getElementById("talkModalAbstract").innerHTML = abstract;
+	  document.getElementById("talkModal").style.display = "flex";
+	  document.body.style.overflow = "hidden";
+	}
+  
+	function closeTalkModal(event) {
+	  document.getElementById("talkModal").style.display = "none";
+	  document.body.style.overflow = "auto";
+	}
+  </script>
+  
+  <!-- /TALKS SECTION -->
+  
 
 
+
+
+
+
+
+
+
+
+		
 		<!-- EXPERIENCE -->
 		<div class="erling_tm_section clearfix" id="education">
 			<div class="erling_tm_portfolio swiper-section">
